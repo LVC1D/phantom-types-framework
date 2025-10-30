@@ -1,3 +1,6 @@
+mod file_handle;
+pub use file_handle::*;
+
 use std::marker::PhantomData;
 
 // 1. Define length marker types
@@ -72,3 +75,4 @@ mod tests {
     }
     */
 }
+
