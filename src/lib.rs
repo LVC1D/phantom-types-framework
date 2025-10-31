@@ -4,6 +4,9 @@ pub use file_handle::*;
 mod request_builder;
 pub use request_builder::*;
 
+mod email_builder;
+pub use email_builder::*;
+
 use std::marker::PhantomData;
 
 // 1. Define length marker types
@@ -50,6 +53,7 @@ impl<T, N> LengthVec<T, N> {
         }
     }
 }
+
 
 #[cfg(test)]
 mod tests {
